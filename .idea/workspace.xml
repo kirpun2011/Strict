@@ -4,7 +4,6 @@
     <list default="true" id="bd6d1c43-5475-47cd-9766-7698d527949c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/styles.less" afterPath="$PROJECT_DIR$/less/styles.less" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -38,8 +37,8 @@
           <file leaf-file-name="styles.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/less/styles.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="402">
-                  <caret line="601" column="19" lean-forward="false" selection-start-line="601" selection-start-column="19" selection-end-line="601" selection-end-column="19" />
+                <state relative-caret-position="615">
+                  <caret line="208" column="20" lean-forward="false" selection-start-line="208" selection-start-column="20" selection-end-line="208" selection-end-column="20" />
                   <folding />
                 </state>
               </provider>
@@ -207,12 +206,13 @@
       <workItem from="1518859151808" duration="861000" />
       <workItem from="1518860087241" duration="223000" />
       <workItem from="1518860424111" duration="1000" />
-      <workItem from="1518860527466" duration="6764000" />
+      <workItem from="1518860527466" duration="6818000" />
+      <workItem from="1518867444145" duration="462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50672000" />
+    <option name="totallyTimeSpent" value="51188000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -590,7 +590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="634">
           <caret line="590" column="12" lean-forward="true" selection-start-line="590" selection-start-column="12" selection-end-line="592" selection-end-column="25" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -604,8 +603,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/less/styles.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="601" column="19" lean-forward="false" selection-start-line="601" selection-start-column="19" selection-end-line="601" selection-end-column="19" />
+        <state relative-caret-position="615">
+          <caret line="208" column="20" lean-forward="false" selection-start-line="208" selection-start-column="20" selection-end-line="208" selection-end-column="20" />
           <folding />
         </state>
       </provider>
