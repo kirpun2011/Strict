@@ -1,14 +1,21 @@
 @import "variables";
 @import "mixins";
 
-body, p {
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, p, div {
   font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 
+//
 // ЗАГОЛОВОК С ЛОГОТИПОМ
+//
 .top {
   background-color: @bg-color;
   height: 100px;
@@ -84,7 +91,10 @@ body, p {
 }
 
 
+//
 // ЦЕНТРАЛЬНЫЙ БАННЕР С ЗАГОЛОВКОМ
+//
+
 .banner {
   margin: 0 auto;
   height: 800px;
@@ -221,7 +231,9 @@ body, p {
 }
 
 
+//
 // КРАТКОЕ ОПИСАНИЕ
+//
 .simple {
   height: 340px;
   background-color: @bg-color;
@@ -293,7 +305,10 @@ body, p {
   }
 }
 
+
+//
 // ОСОБЕННОСТИ (ИКОНКИ)
+//
 .feature {
   background-color: #fff;
   height: 340px;
@@ -314,7 +329,7 @@ body, p {
     height: 310px;
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 345px) {
     height: 390px;
   }
 
@@ -353,6 +368,7 @@ body, p {
     height: 100px;
     margin-top: 60px;
     margin-bottom: 25px;
+    border-radius: 5px;
 
     @media (max-width: 768px) {
       width: 80px;
@@ -400,6 +416,10 @@ body, p {
     }
   }
 
+  &__awesome-icon {
+    padding-bottom: 40px;
+  }
+
   &__title {
     .text-change(22px, @font-weight, @text-color3);
     margin-bottom: 10px;
@@ -410,6 +430,176 @@ body, p {
 
     @media (max-width: 425px) {
       .text-change(13px, @font-weight, @text-color4);
+    }
+  }
+}
+
+
+//
+// ПОРТФОЛИО
+//
+
+.portfolio {
+  background-color: @bg-color;
+
+  &_wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  &__title {
+    .text-change(41px, @font-weight, @text-color3);
+    padding-top: 80px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    @media (max-width: 768px) {
+      padding-top: 40px;
+      margin-bottom: 15px;
+    }
+
+    @media (max-width: 480px) {
+      .text-change(35px, @font-weight, @text-color3);
+    }
+  }
+
+  &__desc {
+    .text-change(20px, @font-weight, @text-color4);
+    padding-bottom: 60px;
+
+    @media (max-width: 768px) {
+      padding-bottom: 45px;
+    }
+
+    @media (max-width: 480px) {
+      .text-change(16px, @font-weight, @text-color4);
+      padding-bottom: 35px;
+    }
+
+    @media (max-width: 425px) {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__works {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    @media (max-width: 1200px) {
+      justify-content: center;
+    }
+
+    &:last-child {
+      padding-bottom: 30px;
+    }
+  }
+
+  &__imgBox {
+    position: relative;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: auto;
+
+    @media (max-width: 640px) {
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+    }
+
+    a {
+      i {
+        position: absolute;
+        font-size: 27px;
+        color: #fff;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 45px;
+        height: 45px;
+        margin: auto;
+        text-align: center;
+        line-height: 47px;
+        transform: scale(2);
+        background-color: #15a4fa;
+        border-radius: 3px;
+        border: 1px solid white;
+        opacity: 0;
+        transition: 0.5s;
+      }
+    }
+
+    &:hover {
+      i {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-color: #15a4fa;
+      opacity: 0;
+      width: 100%;
+      height: 99%;
+      transition: 0.5s;
+    }
+
+    &:hover::before {
+      opacity: 0.65;
+    }
+  }
+
+  &__image {
+    width: 360px;
+    height: 260px;
+    object-fit: cover;
+
+    @media (max-width: 1200px) {
+      width: 450px;
+      height: 300px;
+    }
+
+    @media (max-width: 1024px) {
+      margin-left: 0;
+      margin-right: 0;
+      width: 390px;
+    }
+
+    @media (max-width: 890px) {
+      width: 350px;
+      height: 210px;
+    }
+
+    @media (max-width: 800px) {
+      width: 300px;
+      height: 170px;
+    }
+
+    @media (max-width: 690px) {
+      width: 250px;
+      height: 150px;
+    }
+
+    @media (max-width: 580px) {
+      width: 430px;
+    }
+
+    @media (max-width: 480px) {
+      width: 340px;
+    }
+
+    @media (max-width: 390px) {
+      width: 280px;
     }
   }
 }
